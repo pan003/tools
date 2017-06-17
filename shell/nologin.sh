@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# ÃâµÇÂ¼ÅäÖÃ
-# 1.ÔÚÌø°å»úÉÏÖ´ĞĞ
+# å…ç™»å½•é…ç½®
+# 1.åœ¨è·³æ¿æœºä¸Šæ‰§è¡Œ
 ssh-copy-id -i .ssh/id_rsa.pub user@targethost
 
-# 2.ÔÚÔ´»úÆ÷ÉÏÖ´ĞĞ
+# 2.åœ¨æºæœºå™¨ä¸Šæ‰§è¡Œ
 mkdir .ssh
 chmod 700 .ssh
 scp user@targethost:~/.ssh/id_rsa.pub .ssh/authorized_keys
