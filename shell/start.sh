@@ -57,4 +57,6 @@ else
     echo "$0 ${1%/} start failed"
 fi
 #tail -f ${LOG_DIR}catalina.out
-tail -f ${LOG_DIR}catalina.out|sed '/Tomcat started on port/q'
+#tail -f ${LOG_DIR}catalina.out|sed '/Tomcat started on port/q'
+
+tail -f ${LOG_DIR}catalina.out| sed '/.*Tomcat started on port.*/q'
